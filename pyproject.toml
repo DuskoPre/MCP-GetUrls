@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mcp-geturls"
+version = "0.1.0"
+description = "A web application to search, select, and fetch-parse content from the web."
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = "^0.17.6"
+httpx = "^0.23.0"
+pydantic = "^1.10.2"
+beautifulsoup4 = "^4.11.1"
+lxml = "^4.9.2"
+duckduckgo-search = "^1.0.0"
+sentence-transformers = "^2.2.2"
+numpy = "^1.21.5"
+docling = "^0.1.0"
+docling-core = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.2"
+
+[tool.poetry.scripts]
+mcp-geturls = "app.main:app"
